@@ -12,9 +12,6 @@ manifest:
         name-allowlist:
           - cmsis
           - hal_stm32
-          - segger
-          - mbedtls
-          - cmsis_6
 
   self:
-    path: applications
+    path: zephyr-workspace

@@ -4,17 +4,16 @@
 
 ### Setup Python virtual environment
 
-```bash
+```shell
 python3 -m venv .venv
 . .venv/bin/activate
 pip install west
 ```
 
 
-
 ### Setup workspace
 
-```bash
+```shell
 mkdir zephyr-workspace
 cd zephyr-workspace
 west init -m https://github.com/rideyourstyle/zephyr-getting-started-lw.git
@@ -24,4 +23,6 @@ west update
 
 ### Install Python requirements
 
-pip install -r zephyr/scripts/requirements.txt
+```shell
+west packages pip --install
+```
