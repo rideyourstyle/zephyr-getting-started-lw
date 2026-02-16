@@ -30,7 +30,7 @@ west sdk install
 ### Build application 'blinky'
 ```shell
 cd zephyr
-west build --pristine -b nucleo_l152re ../zephyr-firmware/applications/blinky
+west build --pristine -b nucleo_l152xe ../zephyr-firmware/applications/blinky
 ```
 
 ### Build application 'hello world'
