@@ -14,4 +14,4 @@ manifest:
           - hal_stm32
 
   self:
-    path: zephyr-workspace
+    path: zephyr-firmware
