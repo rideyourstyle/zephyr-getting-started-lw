@@ -8,3 +8,4 @@ target_sources(equal_checker INTERFACE
         equal_checker.c
         equal_checker.h
 )
+

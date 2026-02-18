@@ -6,6 +6,7 @@
 
 #include <stdint.h>
 #include <stdio.h>
+
 #include "equal_checker.h"
 
 int main(void)
@@ -14,12 +15,15 @@ int main(void)
 
 	const uint32_t a = 5;
 	const uint32_t b = 6;
+
 	if ( isEqual( a, b ))
 	{
 		printf("%d == %d", a, b);
-	} else
+	} 
+	else
 	{
 		printf("%d != %d", a, b);
 	}
+	
 	return 0;
 }
