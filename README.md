@@ -25,7 +25,7 @@ pip install west
 ```shell
 mkdir zephyr-workspace
 cd zephyr-workspace
-west init -m https://github.com/rideyourstyle/zephyr-getting-started-lw.git
+west init -m https://github.com/rideyourstyle/zephyr-getting-started-lw.git -mr tag-1
 west update
 ```
 
