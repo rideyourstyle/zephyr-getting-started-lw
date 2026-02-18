@@ -1,14 +1,3 @@
-set(LIBRARY_SOURCES
-    equal_checker.c
-)
-set(LIBRARY_INCLUDES
-    .
-)
-
-add_library(equal_checker STATIC
-    ${LIBRARY_SOURCES}
-)
-
-target_include_directories(equal_checker PUBLIC
-    ${LIBRARY_INCLUDES}
-)
+zephyr_library_named(equal_checker)
+zephyr_library_sources(equal_checker.c)
+zephyr_include_directories(${CMAKE_CURRENT_SOURCE_DIR})

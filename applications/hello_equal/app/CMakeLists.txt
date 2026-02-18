@@ -1,13 +1,8 @@
-set(TARGET_SOURCES 
+set(TARGET_SOURCES
     main.c
 )
-set(TARGET_INCLUDES 
+set(TARGET_INCLUDES
     .
-)
-
-# include libraries
-target_link_libraries(${EXECUTABLE_NAME} PUBLIC
-    equal_checker
 )
 
 target_sources(${EXECUTABLE_NAME} PRIVATE
@@ -15,4 +10,9 @@ target_sources(${EXECUTABLE_NAME} PRIVATE
 )
 target_include_directories(${EXECUTABLE_NAME} PUBLIC
     ${TARGET_INCLUDES}
+)
+
+# Link library modules
+target_link_libraries(${EXECUTABLE_NAME} PRIVATE
+    equal_checker
 )

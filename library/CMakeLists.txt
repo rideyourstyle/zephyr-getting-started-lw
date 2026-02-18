@@ -1,2 +1,1 @@
-
 add_subdirectory(equal_checker)
