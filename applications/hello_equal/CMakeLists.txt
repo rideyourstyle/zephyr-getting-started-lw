@@ -6,14 +6,12 @@ cmake_minimum_required(VERSION 3.20.0)
 find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 project(HelloEqual VERSION 1.0.0)
 
+set(CMAKE_C_STANDARD          11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+
 set(EXECUTABLE_NAME app)
 set(LIBRARY_NAME Library)
 
-add_library(${LIBRARY_NAME} lib/equal_checker.c)
-target_include_directories(${LIBRARY_NAME} PUBLIC lib/)
-
-target_link_libraries(${EXECUTABLE_NAME} PUBLIC ${LIBRARY_NAME})
-
-
-target_sources(${EXECUTABLE_NAME} PRIVATE src/main.c)
+add_subdirectory(lib)
+add_subdirectory(app)
 
