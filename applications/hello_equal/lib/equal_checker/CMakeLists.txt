@@ -1,6 +1,15 @@
+set(LIBRARY_SOURCES 
+    equal_checker.c
+)
+set(LIBRARY_INCLUDES
+    .
+)
 
+add_library(${LIBRARY_NAME} STATIC
+    ${LIBRARY_SOURCES}
+)
 
-add_library(${LIBRARY_NAME} STATIC equal_checker.c)
-
-target_include_directories(${LIBRARY_NAME} PUBLIC "./")
+target_include_directories(${LIBRARY_NAME} PUBLIC
+    ${LIBRARY_INCLUDES}
+)
 
