@@ -6,5 +6,8 @@
 
 bool isEqual(uint32_t a, uint32_t b);
 
+int32_t doSomeCrazyWork(int32_t a);
+
+void  printSomeText(uint32_t input);
 
 #endif //EQUAL_CHECKER_H

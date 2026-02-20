@@ -13,3 +13,7 @@ add_library(equal_checker STATIC
 target_include_directories(equal_checker PUBLIC
     ${LIBRARY_INCLUDES}
 )
+
+if(TARGET zephyr_interface)
+    target_link_libraries(equal_checker PRIVATE zephyr_interface)
+endif()

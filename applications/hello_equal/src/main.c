@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	printf("Hello Equal! %s\n", CONFIG_BOARD_TARGET);
+	printf("Hello Equal, running on  %s\n", CONFIG_BOARD_TARGET);
 
 	const uint32_t a = 5;
 	const uint32_t b = 6;
