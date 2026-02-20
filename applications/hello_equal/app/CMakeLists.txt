@@ -12,7 +12,7 @@ target_include_directories(${EXECUTABLE_NAME} PUBLIC
     ${TARGET_INCLUDES}
 )
 
-# Link library modules
+# Link used library modules
 target_link_libraries(${EXECUTABLE_NAME} PRIVATE
     equal_checker
 )
