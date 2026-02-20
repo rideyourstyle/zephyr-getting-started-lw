@@ -1,0 +1,5 @@
+tests:
+   testscenario.testsuite:
+      tags: equal_checker
+      type: unit
+
