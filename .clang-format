@@ -1,0 +1,31 @@
+BasedOnStyle: Microsoft
+
+---
+Language: Cpp
+
+AlignConsecutiveMacros: true
+AlignConsecutiveAssignments: true
+AlignConsecutiveBitFields: true
+AlignConsecutiveDeclarations: true
+
+AllowShortCaseLabelsOnASingleLine: false
+
+BraceWrapping:
+  AfterCaseLabel:  true
+  AfterUnion:      true
+
+BreakBeforeTernaryOperators: true
+ColumnLimit:     0
+
+IndentCaseLabels: true
+
+PointerAlignment: Left
+
+SortIncludes: CaseInsensitive
+
+SpacesInParentheses: true
+SpacesInSquareBrackets: true
+SpacesInConditionalStatement: true
+SpacesInContainerLiterals: true
+
+...
