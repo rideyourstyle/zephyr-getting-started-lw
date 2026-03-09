@@ -2,6 +2,8 @@ manifest:
   remotes:
     - name: zephyr-upstream
       url-base: https://github.com/zephyrproject-rtos
+    - name: comstack
+      url-base: git@bitbucket.org:peter_toenz/comstack.git
 
   projects:
     - name: zephyr
@@ -11,6 +13,10 @@ manifest:
         name-allowlist:
           - cmsis_6
           - hal_stm32
+    - name: comstack
+      remote: comstack
+      revision: master
+
 
   self:
     path: zephyr-firmware
