@@ -1,5 +1,0 @@
-tests:
-   library.equal_checker:
-      tags: equal_checker
-      type: unit
-
